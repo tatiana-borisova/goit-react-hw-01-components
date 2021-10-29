@@ -1,0 +1,38 @@
+[
+  {
+    "id": "id-1",
+    "name": "Tatiana Borisova",
+    "tag": "tania",
+    "location": "Berlin, Germany",
+    "avatar": "https://firebasestorage.googleapis.com/v0/b/team-project-js-f466b.appspot.com/o/team-foto%2Ftatjana_borisova.jpg?alt=media&token=4f7f9863-75c8-4cb6-b15b-bd9774422e23",
+    "stats": {
+      "followers": 5603,
+      "views": 4827,
+      "likes": 1308
+    }
+  },
+  {
+    "id": "id-2",
+    "name": "Polina Dudchenko",
+    "tag": "polina",
+    "location": "Heidelberg, Germany",
+    "avatar": "https://firebasestorage.googleapis.com/v0/b/team-project-js-f466b.appspot.com/o/team-foto%2Fpolina_dudchenko.jpg?alt=media&token=f8acd66d-f9f4-4bf9-ac78-7549130d89d0",
+    "stats": {
+      "followers": 7654,
+      "views": 1677,
+      "likes": 8764
+    }
+  },
+  {
+    "id": "id-3",
+    "name": "Kateryna Bielka",
+    "tag": "katia",
+    "location": "Kyiv, Ukraine",
+    "avatar": "https://firebasestorage.googleapis.com/v0/b/team-project-js-f466b.appspot.com/o/team-foto%2Fkaterina_belka.jpg?alt=media&token=1dc1a3f8-31e8-40b7-88ae-608be5c8a0fc",
+    "stats": {
+      "followers": 4567,
+      "views": 3456,
+      "likes": 6753
+    }
+  }
+]
