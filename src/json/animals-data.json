@@ -1,0 +1,7 @@
+[
+  { "id": "id-6", "label": "Dog", "percentage": "4 legs" },
+  { "id": "id-7", "label": "Cat", "percentage": "4 legs" },
+  { "id": "id-8", "label": "Bird", "percentage": "2 legs" },
+  { "id": "id-9", "label": "Snail", "percentage": "1 legs" },
+  { "id": "id-0", "label": "Fish", "percentage": "0 legs" }
+]
