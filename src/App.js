@@ -1,7 +1,7 @@
 // components
 import Section from './components/Section';
-import ProfileList from './components/ProfileList';
-import FriendList from './components/FriendList';
+import ProfileList from './components/Profile';
+import FriendList from './components/Friend';
 import Statistics from './components/Statistics';
 import TransactionHistory from './components/TransactionHistory';
 // json

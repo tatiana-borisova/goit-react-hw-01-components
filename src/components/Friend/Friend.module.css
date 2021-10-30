@@ -1,0 +1,43 @@
+.status {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status--offline {
+  composes: status;
+  background-color: red;
+}
+.status--online {
+  composes: status;
+  background-color: green;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  background-color: rgb(228, 196, 223);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 3px 3px #464646;
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.avatar {
+  margin-left: 5px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: rgb(206, 126, 126) 1px solid;
+}
+.name {
+  margin-left: 10px;
+  color: rgb(39, 39, 39);
+}

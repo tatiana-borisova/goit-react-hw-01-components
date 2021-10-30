@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  padding: 10px;
+}
+.label {
+  margin-bottom: 7px;
+}

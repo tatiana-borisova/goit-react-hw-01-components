@@ -1,9 +1,10 @@
 import Friend from './Friend';
 import PropTypes from 'prop-types';
+import styles from './Friend.module.css';
 
 export default function FriendList({ friends }) {
   return (
-    <ul>
+    <ul className={styles.list}>
       {friends.map(friend => (
         <Friend
           key={friend.id}
