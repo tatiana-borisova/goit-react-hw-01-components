@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
+import colorMaker from '../../js/colorMaker';
 
 export default function Statistics({ stats }) {
   return (
@@ -9,14 +10,12 @@ export default function Statistics({ stats }) {
           key={item.id}
           className={styles.item}
           style={{
-            backgroundColor:
-              '#' +
-              (Math.random().toString(16) + '000000').substring(2, 8) +
-              '80',
+            backgroundColor: colorMaker(),
+            width: item.percentage + '%',
           }}
         >
           <span className={styles.label}>{item.label}</span>
-          <span className={styles.percentage}>{item.percentage}</span>
+          <span className={styles.percentage}>{item.percentage}%</span>
         </li>
       ))}
     </ul>
@@ -28,7 +27,7 @@ Statistics.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      percentage: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      percentage: PropTypes.number.isRequired,
     }),
   ),
 };

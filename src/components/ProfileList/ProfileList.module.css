@@ -1,0 +1,13 @@
+.profileList {
+  display: flex;
+  justify-content: center;
+}
+.profileItem {
+  padding: 10px;
+  color: rgb(73, 73, 73);
+  background-color: rgb(255, 239, 239);
+  box-shadow: 3px 8px 10px #464646;
+}
+.profileItem:not(:last-child) {
+  margin-right: 10px;
+}

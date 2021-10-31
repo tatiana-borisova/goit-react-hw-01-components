@@ -1,18 +1,18 @@
-import Profile from './Profile';
+import Profile from '../Profile';
 import PropTypes from 'prop-types';
-import styles from './Profile.module.css';
+import styles from './ProfileList.module.css';
 
 export default function ProfileList({ users }) {
   return (
     <ul className={styles.profileList}>
-      {users.map(user => (
-        <li key={user.id} className={styles.profileItem}>
+      {users.map(({ id, name, tag, location, avatar, stats }) => (
+        <li key={id} className={styles.profileItem}>
           <Profile
-            name={user.name}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}
+            name={name}
+            tag={tag}
+            location={location}
+            avatar={avatar}
+            stats={stats}
           />
         </li>
       ))}
