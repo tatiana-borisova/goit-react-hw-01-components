@@ -10,9 +10,9 @@ export default function Section({ title, children }) {
   );
 }
 
-// Section.defaultProps = {
-//   title: "Section's title",
-// };
+Section.defaultProps = {
+  title: '',
+};
 
 Section.propTypes = {
   title: PropTypes.string,

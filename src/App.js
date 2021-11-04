@@ -3,6 +3,7 @@ import Section from './components/Section';
 import ProfileList from './components/ProfileList';
 import FriendList from './components/FriendList';
 import Statistics from './components/Statistics';
+import Statistics2 from './components/Statistics2';
 import TransactionHistory from './components/TransactionHistory';
 // json
 import users from './json/users.json';
@@ -22,6 +23,9 @@ export default function App() {
       </Section>
       <Section>
         <Statistics stats={animalsData} />
+      </Section>
+      <Section>
+        <Statistics2 stats={animalsData} />
       </Section>
       <Section title="Friends">
         <FriendList friends={friends} />

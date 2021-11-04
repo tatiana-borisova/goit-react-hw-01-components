@@ -1,28 +1,27 @@
 import PropTypes from 'prop-types';
 import colorMaker from '../../js/colorMaker';
-import styles from './Statistics.module.css';
+import { StyledList, StyledItem, StyledLabel } from './Statistics.styled';
 
-export default function Statistics({ stats }) {
+export default function Statistics2({ stats }) {
   return (
-    <ul className={styles.list}>
+    <StyledList>
       {stats.map(item => (
-        <li
+        <StyledItem
           key={item.id}
-          className={styles.item}
           style={{
             backgroundColor: colorMaker(),
             width: item.percentage + '%',
           }}
         >
-          <span className={styles.label}>{item.label}</span>
-          <span className={styles.percentage}>{item.percentage}%</span>
-        </li>
+          <StyledLabel>{item.label}</StyledLabel>
+          <span>{item.percentage}%</span>
+        </StyledItem>
       ))}
-    </ul>
+    </StyledList>
   );
 }
 
-Statistics.propTypes = {
+Statistics2.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
